@@ -30,4 +30,4 @@ jobs:
        - name: install surge
         run: npm install -g surge
         - name: Run Surge
-          run: surge ./ melbourne-bootcamp.surge.sh -- token ${{secret.surge}}
+          run: surge ./ melbourne-bootcamp.surge.sh -- token ${{secrets.surge}}
