@@ -20,6 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
@@ -28,8 +29,8 @@ jobs:
       with:
           node-version: 12
         
-        # run a single command
-       - name:  Installing Surge
+        # Runs a set commands using the runners shell
+         -name: Installing surge
          
         run: npm Install --global surge
         - name: deploying  Surge
