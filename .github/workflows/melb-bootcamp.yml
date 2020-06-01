@@ -27,7 +27,7 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
       node-version: 14.3.0
-       - name: install surge
+       - name: Install Surge
         run: npm install -g surge
         - name: Run Surge
           run: surge ./ melbourne-bootcamp.surge.sh -- token ${{secrets.surge}}
