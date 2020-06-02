@@ -29,8 +29,8 @@ jobs:
           node-version: 12
         
         # Runs a set commands using the runners shell
-         -name: Installing surge
+          - name: installing surge
+         run: npm install --global surge
          
-        run: npm Install --global surge
         - name: deploying  Surge
           run: surge ./ melbourne-bootcamp.surge.sh --token ${{secrets.surge}}
